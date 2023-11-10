@@ -1,0 +1,35 @@
+[
+    {
+        "email": "ecuaran@correo.com",
+        "company": "univalle",
+        "firstName": "Edwin",
+        "lastName": "Cuaran",
+        "address1": "Cra 96 #3b-45",
+        "address2": "",
+        "country": "Colombia",
+        "state": "Valle edl cauca",
+        "postcode": "760034",
+        "phone": "3174226211",
+        "password": "$2a$10$s5E60nQ.LrckwfgzX0NeJewS0dKEOnB1tnXeBt1Fp/TgkWfsAoGZm",
+        "created": {
+          "$date": "2023-09-25T21:27:48.189Z"
+        }
+    },
+    {
+        "email": "fnarvaez@correo.com",
+        "company": "univalle",
+        "firstName": "Frank",
+        "lastName": "Narvaez",
+        "address1": "Cra 96 #3b-45",
+        "address2": "",
+        "country": "Colombia",
+        "state": "Valle edl cauca",
+        "postcode": "760034",
+        "phone": "3174226211",
+        "password": "$2a$10$s5E60nQ.LrckwfgzX0NeJewS0dKEOnB1tnXeBt1Fp/TgkWfsAoGZm",
+        "created": {
+          "$date": "2023-09-25T21:27:48.189Z"
+        }
+    }
+]
+
