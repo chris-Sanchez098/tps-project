@@ -508,5 +508,14 @@
             <g:image_link>http://localhost:1111/https://www.eps.org/global_graphics/default-store-350x350.jpg</g:image_link>
             <g:availability>in stock</g:availability>
         </item>
+        <item>
+            <g:title>Jacket222</g:title>
+            <g:id>655111db75b9b933a0838696</g:id>
+            <g:link>http://localhost:1111/product/jacket222</g:link>
+            <g:description>&lt;p&gt;&lt;span&gt;Item 1 description about details&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;</g:description>
+            <g:price>99.99 USD</g:price>
+            <g:image_link>http://localhost:1111/uploads/placeholder.png</g:image_link>
+            <g:availability>in stock</g:availability>
+        </item>
     </channel>
 </rss>

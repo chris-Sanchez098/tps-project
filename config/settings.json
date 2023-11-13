@@ -11,7 +11,7 @@
     "emailAddress": "tps-project@outlook.com",
     "productsPerRow": 3,
     "productsPerPage": 6,
-    "footerHtml": "&lt;h4 class=&quot;text-center&quot;&gt;Powered by expressCart&lt;/h4&gt;\r\n&lt;h4 class=&quot;text-center&quot;&gt;TPS &amp;middot; Grupo 7&lt;/h4&gt;\r\n&lt;ul&gt;\r\n  &lt;li&gt;&lt;a href=&quot;https://github.com/chris-Sanchez098&quot; target=&quot;_blank&quot;&gt;\r\n                    &lt;i class=&quot;fa-brands fa-github&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;\r\n                    &lt;span class=&quot;sr-only&quot;&gt;GitHub&lt;/span&gt;\r\n                &lt;/a&gt;\r\n            &lt;/li&gt;\r\n            &lt;li&gt;&lt;a href=&quot;https://www.linkedin.com/in/christian-valenzuela-sanchez/&quot; target=&quot;_blank&quot;&gt;\r\n                    &lt;i class=&quot;fa-brands fa-linkedin&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;\r\n                    &lt;span class=&quot;sr-only&quot;&gt;LinkedIn&lt;/span&gt;\r\n                &lt;/a&gt;\r\n            &lt;/li&gt;\r\n            &lt;li&gt;&lt;a href=&quot;mailto:csanchez.8991@gmail.com&quot;&gt;\r\n                    &lt;i class=&quot;fa-regular fa-envelope&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;\r\n                    &lt;span class=&quot;sr-only&quot;&gt;Email&lt;/span&gt;\r\n                &lt;/a&gt;\r\n            &lt;/li&gt;\r\n&lt;/ul&gt;\r\n    ",
+    "footerHtml": "",
     "googleAnalytics": "",
     "injectJs": "",
     "customCss": "",
