@@ -1,0 +1,8 @@
+Para probar una compra online.
+
+1. omitir el campo: Discount code.
+2. escribe el numero de tarjeta: 4242 4242 4242 4242
+3. en el campo de fecha expiracion: 12/34
+4. en el campo CVC: 567
+5. en Country or region: United states.
+6. codigo ZIP: 12345
