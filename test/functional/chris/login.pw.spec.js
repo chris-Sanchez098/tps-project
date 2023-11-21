@@ -21,8 +21,9 @@ describe('login-user-pwd-ci-empty', function() {
     await driver.findElement(By.id("email")).sendKeys("fnarvaez@correo.com")
     await driver.findElement(By.id("password")).sendKeys("")
     await driver.findElement(By.id("customerloginForm")).click()
+    await driver.sleep(5000);
     assert(await driver.findElement(By.id("notify_message")).getText() == "the password field is required")
-    await driver.sleep(1000)
+    await driver.sleep(5000);
   })
 })
 
@@ -47,7 +48,7 @@ describe('login-user-pwd-ci-fake', function() {
     await driver.findElement(By.id("password")).sendKeys("paswd23")
     await driver.findElement(By.id("customerloginForm")).click()
     assert(await driver.findElement(By.id("notify_message")).getText() == "Access denied. Check password and try again.")
-    await driver.sleep(1000)
+    await driver.sleep(5000);
   })
 })
 
@@ -75,6 +76,6 @@ describe('login-user-pwd-cv', function() {
       const elements = await driver.findElements(By.css(".customer-details-login"))
       assert(elements.length)
     }
-    await driver.sleep(1000)
+    await driver.sleep(5000);
   })
 })
