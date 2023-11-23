@@ -1,0 +1,272 @@
+{
+  "id": "f0192ac2-4280-4b83-af55-3a21a063b752",
+  "version": "2.0",
+  "name": "tps_search_customers",
+  "url": "http://localhost:1111/",
+  "tests": [{
+    "id": "6cc59f80-36b3-47be-a658-9c36cfc7e3a5",
+    "name": "CV",
+    "commands": [{
+      "id": "c10da706-add4-4fd5-9601-870c186e53a4",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:1111/admin/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a3dc2d0-2d2c-4f42-bd56-722bf5bba948",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "698f5566-8c73-452b-ad06-273c659bfb62",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Customers",
+      "targets": [
+        ["linkText=Customers", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='container']/div/nav/div/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/customers')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f856ca86-3dbe-4d7a-b742-4143d452954f",
+      "comment": "",
+      "command": "click",
+      "target": "id=customer_filter",
+      "targets": [
+        ["id=customer_filter", "id"],
+        ["name=customer_filter", "name"],
+        ["css=#customer_filter", "css:finder"],
+        ["xpath=//input[@id='customer_filter']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/main/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad1deab5-26cd-44fe-b12c-90c72d29665d",
+      "comment": "",
+      "command": "type",
+      "target": "id=customer_filter",
+      "targets": [
+        ["id=customer_filter", "id"],
+        ["name=customer_filter", "name"],
+        ["css=#customer_filter", "css:finder"],
+        ["xpath=//input[@id='customer_filter']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/main/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "prueba 1"
+    }, {
+      "id": "5da8d2a0-9ed9-4ded-8323-be49203dce27",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn_customer_filter",
+      "targets": [
+        ["id=btn_customer_filter", "id"],
+        ["css=#btn_customer_filter", "css:finder"],
+        ["xpath=//button[@id='btn_customer_filter']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/main/div[2]/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "880725fe-eb79-4f40-bf59-20f95e64c9e8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=a .col-sm-3:nth-child(2) > div",
+      "targets": [
+        ["css=a .col-sm-3:nth-child(2) > div", "css:finder"],
+        ["xpath=//div[@id='container']/div/main/div[3]/ul/li[3]/a/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//a/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "prueba 1"
+    }]
+  }, {
+    "id": "87890cac-d7db-4113-ba96-6c4318778545",
+    "name": "CI_CUSTOMER_NOT_FOUND",
+    "commands": [{
+      "id": "78341c8e-88df-480d-92f5-b83bc9cb96b3",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:1111/admin/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "908417e1-1902-4ac4-b163-dc01528ed32c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e26e31f-e715-41b1-9e32-77801089fbed",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Customers",
+      "targets": [
+        ["linkText=Customers", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='container']/div/nav/div/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/customers')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39d84f4d-99d4-4e04-bfe7-5c36631df855",
+      "comment": "",
+      "command": "click",
+      "target": "id=customer_filter",
+      "targets": [
+        ["id=customer_filter", "id"],
+        ["name=customer_filter", "name"],
+        ["css=#customer_filter", "css:finder"],
+        ["xpath=//input[@id='customer_filter']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/main/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53437f79-d5cf-45fb-b05c-ab79a5f61032",
+      "comment": "",
+      "command": "type",
+      "target": "id=customer_filter",
+      "targets": [
+        ["id=customer_filter", "id"],
+        ["name=customer_filter", "name"],
+        ["css=#customer_filter", "css:finder"],
+        ["xpath=//input[@id='customer_filter']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/main/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Jose Fernandez"
+    }, {
+      "id": "eab8b2c3-cb04-4703-a900-c1039b5db6a8",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn_customer_filter",
+      "targets": [
+        ["id=btn_customer_filter", "id"],
+        ["css=#btn_customer_filter", "css:finder"],
+        ["xpath=//button[@id='btn_customer_filter']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/main/div[2]/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2f30d52-ae69-4934-96c8-a0a6ee17d22c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center",
+      "targets": [
+        ["css=.text-center", "css:finder"],
+        ["xpath=//div[@id='container']/div/main/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'No orders found')]", "xpath:innerText"]
+      ],
+      "value": "Not customer found"
+    }]
+  }, {
+    "id": "26f777c8-484d-42f9-b9f4-bb75726740f0",
+    "name": "CI_EMPTY",
+    "commands": [{
+      "id": "97d9425b-47b7-45dd-ac65-ab483fdbc031",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:1111/admin/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b669fae-39a2-4b11-8ab7-b276200a8336",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c314b81f-577e-486b-97a7-7968cbfc4f05",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Customers",
+      "targets": [
+        ["linkText=Customers", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='container']/div/nav/div/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/customers')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aee75a69-bf54-422f-89f9-b118c25eb2c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=customer_filter",
+      "targets": [
+        ["id=customer_filter", "id"],
+        ["name=customer_filter", "name"],
+        ["css=#customer_filter", "css:finder"],
+        ["xpath=//input[@id='customer_filter']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/main/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2f7651c-24df-455b-9037-2fc46aea90af",
+      "comment": "",
+      "command": "type",
+      "target": "id=customer_filter",
+      "targets": [
+        ["id=customer_filter", "id"],
+        ["name=customer_filter", "name"],
+        ["css=#customer_filter", "css:finder"],
+        ["xpath=//input[@id='customer_filter']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/main/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd0582d8-52b4-48c7-8955-d51e38dcbff6",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn_customer_filter",
+      "targets": [
+        ["id=btn_customer_filter", "id"],
+        ["css=#btn_customer_filter", "css:finder"],
+        ["xpath=//button[@id='btn_customer_filter']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/main/div[2]/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b1f6685-958b-4ab0-bc98-e76c0706e614",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=notify_message",
+      "targets": [
+        ["id=notify_message", "id"],
+        ["css=#notify_message", "css:finder"],
+        ["xpath=//div[@id='notify_message']", "xpath:attributes"],
+        ["xpath=//div[6]", "xpath:position"],
+        ["xpath=//div[contains(.,'Please enter a keyword to filter')]", "xpath:innerText"]
+      ],
+      "value": "The customers field cannot be empty"
+    }]
+  }],
+  "suites": [{
+    "id": "880c2feb-2174-4d9f-9261-779a7aa7a729",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:1111/"],
+  "plugins": []
+}

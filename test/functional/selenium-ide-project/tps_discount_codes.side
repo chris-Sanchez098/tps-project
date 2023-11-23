@@ -1,0 +1,2110 @@
+{
+  "id": "cb33fbf2-c543-489f-9542-4cd7e796ebd9",
+  "version": "2.0",
+  "name": "tps_discount_codes",
+  "url": "http://localhost:1111/",
+  "tests": [{
+    "id": "8455e64d-c873-4fba-a406-39722bf7c06b",
+    "name": "CI_DISCOUNT_CODE_EMPTY",
+    "commands": [{
+      "id": "5df6b0ae-feda-4554-8b79-5c357fda7562",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:1111/admin/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf51d8f9-e313-4561-86dc-681fdd7d2dda",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b9cfce9-4acc-4424-a46b-b50001260143",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Discount codes",
+      "targets": [
+        ["linkText=Discount codes", "linkText"],
+        ["css=.mb-2 > .nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='container']/div/nav/div/ul[2]/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/settings/discounts')]", "xpath:href"],
+        ["xpath=//ul[2]/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fa01ef3-ed14-4e9d-844b-b7f7661731b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-12",
+      "targets": [
+        ["css=.col-md-12", "css:finder"],
+        ["xpath=//div[@id='container']/div/main/div", "xpath:idRelative"],
+        ["xpath=//main/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fc5fb36-fce1-4741-9051-978017313f21",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Discount",
+      "targets": [
+        ["linkText=New Discount", "linkText"],
+        ["css=.btn-outline-success:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'New Discount')]", "xpath:link"],
+        ["xpath=//div[@id='container']/div/main/div/h2/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/settings/discount/new')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'New Discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "419f6af5-4971-4515-be1a-5901f7d348a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountCode",
+      "targets": [
+        ["id=discountCode", "id"],
+        ["css=#discountCode", "css:finder"],
+        ["xpath=//input[@id='discountCode']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78eb457f-8e98-425d-9808-6b7510b8038d",
+      "comment": "",
+      "command": "type",
+      "target": "id=discountCode",
+      "targets": [
+        ["id=discountCode", "id"],
+        ["css=#discountCode", "css:finder"],
+        ["xpath=//input[@id='discountCode']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d124a22f-46c9-429c-a603-f20bea5433e6",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountType",
+      "targets": [
+        ["id=discountType", "id"],
+        ["css=#discountType", "css:finder"],
+        ["xpath=//select[@id='discountType']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3fb691b-46b1-4ba6-81e6-aca5a9ed4f77",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountValue",
+      "targets": [
+        ["id=discountValue", "id"],
+        ["css=#discountValue", "css:finder"],
+        ["xpath=//input[@id='discountValue']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "547f8dc0-fedb-4d22-834e-ec6afb8e760c",
+      "comment": "",
+      "command": "type",
+      "target": "id=discountValue",
+      "targets": [
+        ["id=discountValue", "id"],
+        ["css=#discountValue", "css:finder"],
+        ["xpath=//input[@id='discountValue']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "3bbefb99-8c31-4f9a-bea0-d1d5dff0b6af",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=discountStart",
+      "targets": [
+        ["id=discountStart", "id"],
+        ["css=#discountStart", "css:finder"],
+        ["xpath=//input[@id='discountStart']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[5]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "273b00a6-28e9-4d48-9374-db5bf719870f",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.gj-modal:nth-child(19)",
+      "targets": [
+        ["css=.gj-modal:nth-child(19)", "css:finder"],
+        ["xpath=//div[10]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c30e655a-1cea-4998-af26-047bfe1b9c9f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.admin",
+      "targets": [
+        ["css=.admin", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "210f1ad6-f1c6-4049-afad-c8d43d9c16e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > .current-month:nth-child(6) > div",
+      "targets": [
+        ["css=tr:nth-child(4) > .current-month:nth-child(6) > div", "css:finder"],
+        ["xpath=//tr[4]/td[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "391f2db4-11b4-4e08-9902-1c24fe65a487",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gj-modal:nth-child(19) .btn:nth-child(2)",
+      "targets": [
+        ["css=.gj-modal:nth-child(19) .btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[10]/div/div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0a370ab-2128-4967-b2b5-ce09ee46ac6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.admin",
+      "targets": [
+        ["css=.admin", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6af550c2-0a01-4fa2-8a42-7d80fba79872",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > .current-month:nth-child(7) > div",
+      "targets": [
+        ["css=tr:nth-child(4) > .current-month:nth-child(7) > div", "css:finder"],
+        ["xpath=//tr[4]/td[7]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85aa09ad-a9f4-4193-9db4-7146cdef8722",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gj-modal:nth-child(20) .btn:nth-child(2)",
+      "targets": [
+        ["css=.gj-modal:nth-child(20) .btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[11]/div/div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41c90cb3-14c6-40a4-aea8-7190eeb0904c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-success:nth-child(1)",
+      "targets": [
+        ["css=.btn-outline-success:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f0c22280-400b-4d32-b6ae-b635dd27cea4",
+    "name": "CV",
+    "commands": [{
+      "id": "2072e99d-4b06-4b0f-b66b-b4c79cfa487d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:1111/admin/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48964a94-37f4-4c5d-93a4-32fe1903e612",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "968c9608-a4b1-4e6c-9cb0-a946ecbed874",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Discount codes",
+      "targets": [
+        ["linkText=Discount codes", "linkText"],
+        ["css=.mb-2 > .nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='container']/div/nav/div/ul[2]/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/settings/discounts')]", "xpath:href"],
+        ["xpath=//ul[2]/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df2e6036-7994-47de-bc4f-8f4c7e0134ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-12",
+      "targets": [
+        ["css=.col-md-12", "css:finder"],
+        ["xpath=//div[@id='container']/div/main/div", "xpath:idRelative"],
+        ["xpath=//main/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "983d232e-0313-4528-b5e7-0c07d52378dd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Discount",
+      "targets": [
+        ["linkText=New Discount", "linkText"],
+        ["css=.btn-outline-success:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'New Discount')]", "xpath:link"],
+        ["xpath=//div[@id='container']/div/main/div/h2/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/settings/discount/new')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'New Discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "662f0342-d28b-4a31-af5f-ccbee2f80534",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountCode",
+      "targets": [
+        ["id=discountCode", "id"],
+        ["css=#discountCode", "css:finder"],
+        ["xpath=//input[@id='discountCode']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e69270fa-c8f8-48d8-878d-b0ae6b87ea2a",
+      "comment": "",
+      "command": "type",
+      "target": "id=discountCode",
+      "targets": [
+        ["id=discountCode", "id"],
+        ["css=#discountCode", "css:finder"],
+        ["xpath=//input[@id='discountCode']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "CODE"
+    }, {
+      "id": "4f659895-ec91-4273-99d4-4509573045c1",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountType",
+      "targets": [
+        ["id=discountType", "id"],
+        ["css=#discountType", "css:finder"],
+        ["xpath=//select[@id='discountType']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7949df5-f354-40e4-8b87-224e14d35475",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountValue",
+      "targets": [
+        ["id=discountValue", "id"],
+        ["css=#discountValue", "css:finder"],
+        ["xpath=//input[@id='discountValue']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9c966f2-3ba7-4974-b7fc-d53ff4aa1ce6",
+      "comment": "",
+      "command": "type",
+      "target": "id=discountValue",
+      "targets": [
+        ["id=discountValue", "id"],
+        ["css=#discountValue", "css:finder"],
+        ["xpath=//input[@id='discountValue']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "261b55cd-731c-4d88-a7c1-0a73caf49498",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=discountStart",
+      "targets": [
+        ["id=discountStart", "id"],
+        ["css=#discountStart", "css:finder"],
+        ["xpath=//input[@id='discountStart']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[5]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ad012ed-83e8-4bda-9db3-ea6f5f598137",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.gj-modal:nth-child(19)",
+      "targets": [
+        ["css=.gj-modal:nth-child(19)", "css:finder"],
+        ["xpath=//div[10]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32fccfb7-6f51-4bb8-92a0-091471db054a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.admin",
+      "targets": [
+        ["css=.admin", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4397c7f1-2ed8-4f92-870f-41906d48ef73",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > .current-month:nth-child(6) > div",
+      "targets": [
+        ["css=tr:nth-child(4) > .current-month:nth-child(6) > div", "css:finder"],
+        ["xpath=//tr[4]/td[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71c29b87-992e-4931-bf2e-06fb2a0dbfb7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gj-modal:nth-child(19) .btn:nth-child(2)",
+      "targets": [
+        ["css=.gj-modal:nth-child(19) .btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[10]/div/div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e17c5453-eb03-4b20-84f6-031faf785d48",
+      "comment": "",
+      "command": "click",
+      "target": "css=.admin",
+      "targets": [
+        ["css=.admin", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cd8c1cd-b23e-4b36-9097-38ec7b547dad",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > .current-month:nth-child(7) > div",
+      "targets": [
+        ["css=tr:nth-child(4) > .current-month:nth-child(7) > div", "css:finder"],
+        ["xpath=//tr[4]/td[7]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbc11534-8d37-43c7-8e69-a1a7f6be47e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gj-modal:nth-child(20) .btn:nth-child(2)",
+      "targets": [
+        ["css=.gj-modal:nth-child(20) .btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[11]/div/div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c150879-f8d3-4cae-a33f-fd2738daa994",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-success:nth-child(1)",
+      "targets": [
+        ["css=.btn-outline-success:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "20a7b0f8-7dd6-4295-941d-812dbc5638ca",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=notify_message",
+      "targets": [
+        ["id=notify_message", "id"],
+        ["css=#notify_message", "css:finder"],
+        ["xpath=//div[@id='notify_message']", "xpath:attributes"],
+        ["xpath=//body/div[5]", "xpath:position"],
+        ["xpath=//div[contains(.,'Discount code created successfully')]", "xpath:innerText"]
+      ],
+      "value": "Discount code created successfully"
+    }]
+  }, {
+    "id": "2974f405-46ed-4193-a68a-d0191597b0e1",
+    "name": "CI_INVALID_DISCOUNT_CODE",
+    "commands": [{
+      "id": "a83be4b9-f720-428a-92fd-c6cf8a6e4f15",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:1111/admin/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29819e48-d0d0-4132-ba62-a6df8ad39ef2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a21a735-3ef4-495e-9106-e4599458ec41",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Discount codes",
+      "targets": [
+        ["linkText=Discount codes", "linkText"],
+        ["css=.mb-2 > .nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='container']/div/nav/div/ul[2]/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/settings/discounts')]", "xpath:href"],
+        ["xpath=//ul[2]/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc347b5f-ed86-4bf3-9c09-17ea42eadba5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-12",
+      "targets": [
+        ["css=.col-md-12", "css:finder"],
+        ["xpath=//div[@id='container']/div/main/div", "xpath:idRelative"],
+        ["xpath=//main/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "368f39dc-024b-4411-8d04-35decb7ffcad",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Discount",
+      "targets": [
+        ["linkText=New Discount", "linkText"],
+        ["css=.btn-outline-success:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'New Discount')]", "xpath:link"],
+        ["xpath=//div[@id='container']/div/main/div/h2/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/settings/discount/new')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'New Discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0ad3729-893f-48a5-88ab-beaa65a31232",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountCode",
+      "targets": [
+        ["id=discountCode", "id"],
+        ["css=#discountCode", "css:finder"],
+        ["xpath=//input[@id='discountCode']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42028d77-5807-4486-88dc-68d3113e67b4",
+      "comment": "",
+      "command": "type",
+      "target": "id=discountCode",
+      "targets": [
+        ["id=discountCode", "id"],
+        ["css=#discountCode", "css:finder"],
+        ["xpath=//input[@id='discountCode']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "CO"
+    }, {
+      "id": "dfafdc4a-bb3b-4d09-884c-a5f5970cf780",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountType",
+      "targets": [
+        ["id=discountType", "id"],
+        ["css=#discountType", "css:finder"],
+        ["xpath=//select[@id='discountType']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ba9398f-1280-46e8-a88f-adb4d0ff90ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountValue",
+      "targets": [
+        ["id=discountValue", "id"],
+        ["css=#discountValue", "css:finder"],
+        ["xpath=//input[@id='discountValue']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8a0ef10-7006-411c-b27c-a803f2db1a9c",
+      "comment": "",
+      "command": "type",
+      "target": "id=discountValue",
+      "targets": [
+        ["id=discountValue", "id"],
+        ["css=#discountValue", "css:finder"],
+        ["xpath=//input[@id='discountValue']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "91ea99a5-b3fe-4e60-91cf-5b3129ebe277",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=discountStart",
+      "targets": [
+        ["id=discountStart", "id"],
+        ["css=#discountStart", "css:finder"],
+        ["xpath=//input[@id='discountStart']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[5]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26e1453a-6fbc-4771-afa9-f3b625977ef1",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.gj-modal:nth-child(19)",
+      "targets": [
+        ["css=.gj-modal:nth-child(19)", "css:finder"],
+        ["xpath=//div[10]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c43af8e6-fd14-42e6-aefa-3a665c454741",
+      "comment": "",
+      "command": "click",
+      "target": "css=.admin",
+      "targets": [
+        ["css=.admin", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "808848cb-d909-414c-85cb-3b36854284ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > .current-month:nth-child(6) > div",
+      "targets": [
+        ["css=tr:nth-child(4) > .current-month:nth-child(6) > div", "css:finder"],
+        ["xpath=//tr[4]/td[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3df20071-67d7-4b2c-b4c4-7279bbca5ada",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gj-modal:nth-child(19) .btn:nth-child(2)",
+      "targets": [
+        ["css=.gj-modal:nth-child(19) .btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[10]/div/div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "573960e0-4cf4-4729-90d9-7b891ae403ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.admin",
+      "targets": [
+        ["css=.admin", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6b4eb5e-0ca3-4bbe-9930-c05561e4735e",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > .current-month:nth-child(7) > div",
+      "targets": [
+        ["css=tr:nth-child(4) > .current-month:nth-child(7) > div", "css:finder"],
+        ["xpath=//tr[4]/td[7]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53c62c48-a621-4eaa-8283-876883b3b81b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gj-modal:nth-child(20) .btn:nth-child(2)",
+      "targets": [
+        ["css=.gj-modal:nth-child(20) .btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[11]/div/div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f622208b-f8d7-4d75-9ba0-19896e8b7f99",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-success:nth-child(1)",
+      "targets": [
+        ["css=.btn-outline-success:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fc15acc-7404-4a35-b602-ea9e0c10107e",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=notify_message",
+      "targets": [
+        ["id=notify_message", "id"],
+        ["css=#notify_message", "css:finder"],
+        ["xpath=//div[@id='notify_message']", "xpath:attributes"],
+        ["xpath=//body/div[5]", "xpath:position"],
+        ["xpath=//div[contains(.,'Discount code created successfully')]", "xpath:innerText"]
+      ],
+      "value": "Invalid discount code"
+    }]
+  }, {
+    "id": "5cbdfeca-1dce-492e-9ab8-e3d9ec060d77",
+    "name": "CI_INVALID_DISCOUNT_VALUE",
+    "commands": [{
+      "id": "5a7d119a-0b8d-4429-bf82-75164f437069",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:1111/admin/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a3f3e05-0372-4240-a7f9-2703bdd662ce",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b75186e-e3ab-45ec-a411-fada36dff795",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Discount codes",
+      "targets": [
+        ["linkText=Discount codes", "linkText"],
+        ["css=.mb-2 > .nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='container']/div/nav/div/ul[2]/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/settings/discounts')]", "xpath:href"],
+        ["xpath=//ul[2]/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "205708b7-f0f7-480c-85f4-9d689f00f407",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-12",
+      "targets": [
+        ["css=.col-md-12", "css:finder"],
+        ["xpath=//div[@id='container']/div/main/div", "xpath:idRelative"],
+        ["xpath=//main/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b89afef9-b1ba-49b1-b39e-f307e2894232",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Discount",
+      "targets": [
+        ["linkText=New Discount", "linkText"],
+        ["css=.btn-outline-success:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'New Discount')]", "xpath:link"],
+        ["xpath=//div[@id='container']/div/main/div/h2/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/settings/discount/new')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'New Discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "db60c4b8-cec5-4fa1-bdec-7f4917355fbd",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountCode",
+      "targets": [
+        ["id=discountCode", "id"],
+        ["css=#discountCode", "css:finder"],
+        ["xpath=//input[@id='discountCode']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9debcb6-4c26-4f6e-aae4-9d0caea63aaf",
+      "comment": "",
+      "command": "type",
+      "target": "id=discountCode",
+      "targets": [
+        ["id=discountCode", "id"],
+        ["css=#discountCode", "css:finder"],
+        ["xpath=//input[@id='discountCode']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "CODE2"
+    }, {
+      "id": "b2b56968-de4f-49fa-81b4-7896ed246c03",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountType",
+      "targets": [
+        ["id=discountType", "id"],
+        ["css=#discountType", "css:finder"],
+        ["xpath=//select[@id='discountType']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4c8b648-ff81-4223-a725-042689338c7c",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountValue",
+      "targets": [
+        ["id=discountValue", "id"],
+        ["css=#discountValue", "css:finder"],
+        ["xpath=//input[@id='discountValue']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfba17f7-181b-4039-a7b2-8f9c541572be",
+      "comment": "",
+      "command": "type",
+      "target": "id=discountValue",
+      "targets": [
+        ["id=discountValue", "id"],
+        ["css=#discountValue", "css:finder"],
+        ["xpath=//input[@id='discountValue']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "20.5"
+    }, {
+      "id": "4a0aaebf-43a0-4704-8781-d076eb2e26b3",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=discountStart",
+      "targets": [
+        ["id=discountStart", "id"],
+        ["css=#discountStart", "css:finder"],
+        ["xpath=//input[@id='discountStart']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[5]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a456aca0-27c1-47da-bffb-292845e52729",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.gj-modal:nth-child(19)",
+      "targets": [
+        ["css=.gj-modal:nth-child(19)", "css:finder"],
+        ["xpath=//div[10]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3361f4fd-32d3-46da-b15c-148d5ff3391b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.admin",
+      "targets": [
+        ["css=.admin", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91a8af48-264d-4ec2-b6e3-a509901bc1eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > .current-month:nth-child(6) > div",
+      "targets": [
+        ["css=tr:nth-child(4) > .current-month:nth-child(6) > div", "css:finder"],
+        ["xpath=//tr[4]/td[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab2f867a-07c7-4b74-94cf-250595f6cc8c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gj-modal:nth-child(19) .btn:nth-child(2)",
+      "targets": [
+        ["css=.gj-modal:nth-child(19) .btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[10]/div/div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "391063c8-c1dc-4896-8ae0-604db6c0ef55",
+      "comment": "",
+      "command": "click",
+      "target": "css=.admin",
+      "targets": [
+        ["css=.admin", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47db58aa-356c-475c-bb79-250e8b01461b",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > .current-month:nth-child(7) > div",
+      "targets": [
+        ["css=tr:nth-child(4) > .current-month:nth-child(7) > div", "css:finder"],
+        ["xpath=//tr[4]/td[7]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da822b9c-a2dd-4e5f-913c-b0356ec88c63",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gj-modal:nth-child(20) .btn:nth-child(2)",
+      "targets": [
+        ["css=.gj-modal:nth-child(20) .btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[11]/div/div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33596606-d287-400a-96b0-3c4b3d5defc5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-success:nth-child(1)",
+      "targets": [
+        ["css=.btn-outline-success:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "312716c0-31f0-4b81-af03-a38d1b920b26",
+    "name": "CI_DISCOUNT_VALUE_EMPTY",
+    "commands": [{
+      "id": "fb06ac2b-37c3-47a7-863a-3cb5f6ff0ed8",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:1111/admin/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8218fa5-7363-43b9-9de3-463097025372",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4f9b7f1-31d1-41bd-932a-3a3ab63cd4b3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Discount codes",
+      "targets": [
+        ["linkText=Discount codes", "linkText"],
+        ["css=.mb-2 > .nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='container']/div/nav/div/ul[2]/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/settings/discounts')]", "xpath:href"],
+        ["xpath=//ul[2]/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbb5f4a9-5f0d-424f-bed5-7e9b49ec4c4a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-12",
+      "targets": [
+        ["css=.col-md-12", "css:finder"],
+        ["xpath=//div[@id='container']/div/main/div", "xpath:idRelative"],
+        ["xpath=//main/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "669bbc81-7d3d-4ce7-a1d6-01337c08280d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Discount",
+      "targets": [
+        ["linkText=New Discount", "linkText"],
+        ["css=.btn-outline-success:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'New Discount')]", "xpath:link"],
+        ["xpath=//div[@id='container']/div/main/div/h2/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/settings/discount/new')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'New Discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28fe0e9c-060a-4394-8fd0-c98412dc4480",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountCode",
+      "targets": [
+        ["id=discountCode", "id"],
+        ["css=#discountCode", "css:finder"],
+        ["xpath=//input[@id='discountCode']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f16e516f-3044-41dc-a597-c8ffb7e5d1db",
+      "comment": "",
+      "command": "type",
+      "target": "id=discountCode",
+      "targets": [
+        ["id=discountCode", "id"],
+        ["css=#discountCode", "css:finder"],
+        ["xpath=//input[@id='discountCode']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "CODE2"
+    }, {
+      "id": "d6342ebd-82ea-457d-a37b-7e5ee979b0e1",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountType",
+      "targets": [
+        ["id=discountType", "id"],
+        ["css=#discountType", "css:finder"],
+        ["xpath=//select[@id='discountType']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9d8c489-3315-46a6-ae81-4ea5d1b468e2",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountValue",
+      "targets": [
+        ["id=discountValue", "id"],
+        ["css=#discountValue", "css:finder"],
+        ["xpath=//input[@id='discountValue']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b20a7cc2-ddcb-4ba0-928d-9581931572eb",
+      "comment": "",
+      "command": "type",
+      "target": "id=discountValue",
+      "targets": [
+        ["id=discountValue", "id"],
+        ["css=#discountValue", "css:finder"],
+        ["xpath=//input[@id='discountValue']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4173bbc5-7f0e-4ca8-b11b-b8c1e966d2ba",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=discountStart",
+      "targets": [
+        ["id=discountStart", "id"],
+        ["css=#discountStart", "css:finder"],
+        ["xpath=//input[@id='discountStart']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[5]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3458377d-3e33-48bb-ad14-53c3e31435ce",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.gj-modal:nth-child(19)",
+      "targets": [
+        ["css=.gj-modal:nth-child(19)", "css:finder"],
+        ["xpath=//div[10]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfba87a9-1ef8-4b06-a199-f4dd4fb51f5b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.admin",
+      "targets": [
+        ["css=.admin", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9116f49d-ecd3-4491-b052-2a9a7da542bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > .current-month:nth-child(6) > div",
+      "targets": [
+        ["css=tr:nth-child(4) > .current-month:nth-child(6) > div", "css:finder"],
+        ["xpath=//tr[4]/td[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5313453d-afb4-4761-9a45-8b3deede2441",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gj-modal:nth-child(19) .btn:nth-child(2)",
+      "targets": [
+        ["css=.gj-modal:nth-child(19) .btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[10]/div/div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0644b8ed-0da2-4771-9346-1ee3d36fea00",
+      "comment": "",
+      "command": "click",
+      "target": "css=.admin",
+      "targets": [
+        ["css=.admin", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52f753b4-2be3-4c0f-9b3a-b44dd8a990e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > .current-month:nth-child(7) > div",
+      "targets": [
+        ["css=tr:nth-child(4) > .current-month:nth-child(7) > div", "css:finder"],
+        ["xpath=//tr[4]/td[7]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbe8581e-1fbe-4141-8eab-a5ba69f7d4b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gj-modal:nth-child(20) .btn:nth-child(2)",
+      "targets": [
+        ["css=.gj-modal:nth-child(20) .btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[11]/div/div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c56273a-d836-435e-b78e-70a2dcdeb1ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-success:nth-child(1)",
+      "targets": [
+        ["css=.btn-outline-success:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "34698f71-bf8d-41d5-93ad-730d83779502",
+    "name": "CI_DISCOUNT_START _EMPTY",
+    "commands": [{
+      "id": "e34770af-74e0-414e-9911-c8b9f966bb61",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:1111/admin/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e30b532-b14b-4ca6-bb16-d2a61e58ed66",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "891968aa-42bf-45b3-b287-3ac9dead94b0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Discount codes",
+      "targets": [
+        ["linkText=Discount codes", "linkText"],
+        ["css=.mb-2 > .nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='container']/div/nav/div/ul[2]/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/settings/discounts')]", "xpath:href"],
+        ["xpath=//ul[2]/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fa5b046-0c69-4ced-bbc6-f4cc3cd3656c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Discount",
+      "targets": [
+        ["linkText=New Discount", "linkText"],
+        ["css=.float-right > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'New Discount')]", "xpath:link"],
+        ["xpath=//div[@id='container']/div/main/div/h2/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/settings/discount/new')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'New Discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d852d76-6811-4b6c-a0b9-a9a00a9350a7",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountCode",
+      "targets": [
+        ["id=discountCode", "id"],
+        ["css=#discountCode", "css:finder"],
+        ["xpath=//input[@id='discountCode']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e9adb26-b235-4ed8-803c-768d28a68dfa",
+      "comment": "",
+      "command": "type",
+      "target": "id=discountCode",
+      "targets": [
+        ["id=discountCode", "id"],
+        ["css=#discountCode", "css:finder"],
+        ["xpath=//input[@id='discountCode']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "CODE20"
+    }, {
+      "id": "172b0958-92aa-4733-82d0-f009f889a0f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountType",
+      "targets": [
+        ["id=discountType", "id"],
+        ["css=#discountType", "css:finder"],
+        ["xpath=//select[@id='discountType']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39747bf4-6f75-4a07-87e9-cfffed08cc9a",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountNewForm",
+      "targets": [
+        ["id=discountNewForm", "id"],
+        ["css=#discountNewForm", "css:finder"],
+        ["xpath=//form[@id='discountNewForm']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/main/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "702c6b38-133e-46bb-aca8-330617257ce5",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountValue",
+      "targets": [
+        ["id=discountValue", "id"],
+        ["css=#discountValue", "css:finder"],
+        ["xpath=//input[@id='discountValue']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebd11096-3ca3-4081-bc8b-14a2f931e111",
+      "comment": "",
+      "command": "type",
+      "target": "id=discountValue",
+      "targets": [
+        ["id=discountValue", "id"],
+        ["css=#discountValue", "css:finder"],
+        ["xpath=//input[@id='discountValue']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "7e57d407-7e5e-4208-a3f7-8fb238ec11ee",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=discountStart",
+      "targets": [
+        ["id=discountStart", "id"],
+        ["css=#discountStart", "css:finder"],
+        ["xpath=//input[@id='discountStart']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[5]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f3959f5-1106-4128-982a-fad7b7c03d2a",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.gj-modal:nth-child(19)",
+      "targets": [
+        ["css=.gj-modal:nth-child(19)", "css:finder"],
+        ["xpath=//div[10]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70bca417-7995-4e8b-9306-e8c6e77386dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.admin",
+      "targets": [
+        ["css=.admin", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74d7261c-c36b-4987-ad6b-48e823839d18",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > .current-month:nth-child(4) > div",
+      "targets": [
+        ["css=tr:nth-child(4) > .current-month:nth-child(4) > div", "css:finder"],
+        ["xpath=//tr[4]/td[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75396e55-94a5-4e37-aa26-0901460d5f86",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gj-modal:nth-child(19) .btn:nth-child(2)",
+      "targets": [
+        ["css=.gj-modal:nth-child(19) .btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[10]/div/div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2b3d274-ca1d-43a5-b516-ba8ad381ed18",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=discountEnd",
+      "targets": [
+        ["id=discountEnd", "id"],
+        ["css=#discountEnd", "css:finder"],
+        ["xpath=//input[@id='discountEnd']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[6]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25300718-9aa0-4656-9971-589aca0e2a6e",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.gj-modal:nth-child(20)",
+      "targets": [
+        ["css=.gj-modal:nth-child(20)", "css:finder"],
+        ["xpath=//div[11]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3561c98-c47f-4ed0-843d-7c9c2e0605a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.admin",
+      "targets": [
+        ["css=.admin", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d625ab3b-2be9-4e4a-b9f4-d9cf97fbf98b",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > .current-month:nth-child(6) > div",
+      "targets": [
+        ["css=tr:nth-child(4) > .current-month:nth-child(6) > div", "css:finder"],
+        ["xpath=//tr[4]/td[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f3aa4e8-19f1-4466-8a59-61f158a841fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gj-modal:nth-child(20) .btn:nth-child(2)",
+      "targets": [
+        ["css=.gj-modal:nth-child(20) .btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[11]/div/div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3793d664-c5b1-4467-8f2d-9dd15cc8587f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-success:nth-child(1)",
+      "targets": [
+        ["css=.btn-outline-success:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5915701c-c71e-4e06-bedd-5e7a74ad0932",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-success:nth-child(1)",
+      "targets": [
+        ["css=.btn-outline-success:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af6eec01-4e02-4af0-9ece-0f11bf070756",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-success:nth-child(1)",
+      "targets": [
+        ["css=.btn-outline-success:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "020a4a3c-b4d8-41a4-ab87-07559afc8915",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=notify_message",
+      "targets": [
+        ["id=notify_message", "id"],
+        ["css=#notify_message", "css:finder"],
+        ["xpath=//div[@id='notify_message']", "xpath:attributes"],
+        ["xpath=//body/div[6]", "xpath:position"],
+        ["xpath=//div[contains(.,'Discount start date needs to be after today')]", "xpath:innerText"]
+      ],
+      "value": "Discount start date needs to be after today"
+    }]
+  }, {
+    "id": "ec170a09-51f5-4c5b-a4ef-a8f4705f0409",
+    "name": "CI_INVALID_DISCOUNT_START",
+    "commands": [{
+      "id": "55c93f19-48c4-43ee-b76b-569bef012c59",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:1111/admin/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b9aac96-c98e-4772-810f-893150042821",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3616dbec-948f-4bbc-8b91-7816f2d64ff3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Discount codes",
+      "targets": [
+        ["linkText=Discount codes", "linkText"],
+        ["css=.mb-2 > .nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='container']/div/nav/div/ul[2]/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/settings/discounts')]", "xpath:href"],
+        ["xpath=//ul[2]/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d66ae1cf-30cc-4fcb-a3d2-3e4edfe25e4e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Discount",
+      "targets": [
+        ["linkText=New Discount", "linkText"],
+        ["css=.float-right > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'New Discount')]", "xpath:link"],
+        ["xpath=//div[@id='container']/div/main/div/h2/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/settings/discount/new')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'New Discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b546d968-c4d7-4bb1-b009-5e773cd333ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountCode",
+      "targets": [
+        ["id=discountCode", "id"],
+        ["css=#discountCode", "css:finder"],
+        ["xpath=//input[@id='discountCode']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d276bb75-1b2b-4ddf-8515-6fb15e9d2ab9",
+      "comment": "",
+      "command": "type",
+      "target": "id=discountCode",
+      "targets": [
+        ["id=discountCode", "id"],
+        ["css=#discountCode", "css:finder"],
+        ["xpath=//input[@id='discountCode']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "CODE23"
+    }, {
+      "id": "923fd9f8-f434-4640-b2a3-36edea9947ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountType",
+      "targets": [
+        ["id=discountType", "id"],
+        ["css=#discountType", "css:finder"],
+        ["xpath=//select[@id='discountType']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cb9678a-130c-4d29-8f12-a56e0f051fe6",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountValue",
+      "targets": [
+        ["id=discountValue", "id"],
+        ["css=#discountValue", "css:finder"],
+        ["xpath=//input[@id='discountValue']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "295030f8-d859-415a-b47b-1be1a79adb49",
+      "comment": "",
+      "command": "type",
+      "target": "id=discountValue",
+      "targets": [
+        ["id=discountValue", "id"],
+        ["css=#discountValue", "css:finder"],
+        ["xpath=//input[@id='discountValue']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "8f4e9e5d-ed04-49bd-96a3-e3e7a159fe67",
+      "comment": "",
+      "command": "click",
+      "target": "css=.admin",
+      "targets": [
+        ["css=.admin", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e843e127-d0fb-4cfa-b0ee-086066df2f9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > .current-month:nth-child(6) > div",
+      "targets": [
+        ["css=tr:nth-child(4) > .current-month:nth-child(6) > div", "css:finder"],
+        ["xpath=//tr[4]/td[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3172835-06f1-4a24-a69d-9ad9f3edf46c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gj-modal:nth-child(20) .btn:nth-child(2)",
+      "targets": [
+        ["css=.gj-modal:nth-child(20) .btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[11]/div/div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec99d79b-1ee6-4e62-be4d-0ba429f4ff1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-success:nth-child(1)",
+      "targets": [
+        ["css=.btn-outline-success:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01be6780-46d1-4e04-aab0-e2f9d12041f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-success:nth-child(1)",
+      "targets": [
+        ["css=.btn-outline-success:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ca376f9-e532-410d-aff8-2d0747b95557",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=notify_message",
+      "targets": [
+        ["id=notify_message", "id"],
+        ["css=#notify_message", "css:finder"],
+        ["xpath=//div[@id='notify_message']", "xpath:attributes"],
+        ["xpath=//body/div[5]", "xpath:position"],
+        ["xpath=//div[contains(.,'Discount end date needs to be after start date')]", "xpath:innerText"]
+      ],
+      "value": "A start date must be entered"
+    }]
+  }, {
+    "id": "847d43a7-755c-4cef-8e4c-299b1271c262",
+    "name": "CI_INVALID_DISCOUNT_END",
+    "commands": [{
+      "id": "5c420879-f380-4924-8323-ca353d46434e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:1111/admin/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56b793c3-017e-4d9e-a807-b596578f0acd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53bf9a93-1df0-47fa-8304-361d3347b7cb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Discount codes",
+      "targets": [
+        ["linkText=Discount codes", "linkText"],
+        ["css=.mb-2 > .nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='container']/div/nav/div/ul[2]/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/settings/discounts')]", "xpath:href"],
+        ["xpath=//ul[2]/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22e4693f-5c83-47d0-a3cc-b65f3c02e677",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Discount",
+      "targets": [
+        ["linkText=New Discount", "linkText"],
+        ["css=.float-right > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'New Discount')]", "xpath:link"],
+        ["xpath=//div[@id='container']/div/main/div/h2/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/settings/discount/new')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'New Discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "80b45daf-4611-4051-ab15-0a7d453ac171",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-12:nth-child(2) > .form-group",
+      "targets": [
+        ["css=.col-12:nth-child(2) > .form-group", "css:finder"],
+        ["xpath=//form[@id='discountNewForm']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fbd5d22-1f68-4c0f-8299-a16ef6c8345c",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountCode",
+      "targets": [
+        ["id=discountCode", "id"],
+        ["css=#discountCode", "css:finder"],
+        ["xpath=//input[@id='discountCode']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "370469a7-bc67-4264-9036-43c6a21d1386",
+      "comment": "",
+      "command": "type",
+      "target": "id=discountCode",
+      "targets": [
+        ["id=discountCode", "id"],
+        ["css=#discountCode", "css:finder"],
+        ["xpath=//input[@id='discountCode']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "CODE23"
+    }, {
+      "id": "496e26f0-4ae9-4a4b-8009-e6ca7e223b6c",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountType",
+      "targets": [
+        ["id=discountType", "id"],
+        ["css=#discountType", "css:finder"],
+        ["xpath=//select[@id='discountType']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b13b4000-7a54-4245-b807-3f918984363c",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountValue",
+      "targets": [
+        ["id=discountValue", "id"],
+        ["css=#discountValue", "css:finder"],
+        ["xpath=//input[@id='discountValue']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1c6bdfe-2bec-4fe0-bb26-245a33fb1bb5",
+      "comment": "",
+      "command": "type",
+      "target": "id=discountValue",
+      "targets": [
+        ["id=discountValue", "id"],
+        ["css=#discountValue", "css:finder"],
+        ["xpath=//input[@id='discountValue']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "1f1ea5a5-9cae-4b9f-8929-2c9a903c1b70",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=discountStart",
+      "targets": [
+        ["id=discountStart", "id"],
+        ["css=#discountStart", "css:finder"],
+        ["xpath=//input[@id='discountStart']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[5]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1313dd66-cb38-4f0d-aa64-615a3b4f1b52",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.gj-modal:nth-child(19)",
+      "targets": [
+        ["css=.gj-modal:nth-child(19)", "css:finder"],
+        ["xpath=//div[10]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ac47997-7c36-464c-b0a0-fc78858ab66b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.admin",
+      "targets": [
+        ["css=.admin", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6fe4cec-9d64-42db-ad28-8f8de1758199",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > .current-month:nth-child(6) > div",
+      "targets": [
+        ["css=tr:nth-child(4) > .current-month:nth-child(6) > div", "css:finder"],
+        ["xpath=//tr[4]/td[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "392eb14a-bedd-4352-bc47-6eec4ccb866f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gj-modal:nth-child(19) .btn:nth-child(2)",
+      "targets": [
+        ["css=.gj-modal:nth-child(19) .btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[10]/div/div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ef74ce5-293d-4b7c-87d9-4c846ff49d05",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=discountEnd",
+      "targets": [
+        ["id=discountEnd", "id"],
+        ["css=#discountEnd", "css:finder"],
+        ["xpath=//input[@id='discountEnd']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[6]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5fe9c30-7bb6-4857-89f7-fc9d4a59fbb7",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.gj-modal:nth-child(20)",
+      "targets": [
+        ["css=.gj-modal:nth-child(20)", "css:finder"],
+        ["xpath=//div[11]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74a7358e-694f-4677-984a-2303251862a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.admin",
+      "targets": [
+        ["css=.admin", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe40f4d3-e7b6-4c3c-82bb-944378b8c5df",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > .current-month:nth-child(2) > div",
+      "targets": [
+        ["css=tr:nth-child(4) > .current-month:nth-child(2) > div", "css:finder"],
+        ["xpath=//tr[4]/td[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96f7f5fb-9662-443f-b954-b157b117d62b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gj-modal:nth-child(20) .btn:nth-child(2)",
+      "targets": [
+        ["css=.gj-modal:nth-child(20) .btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[11]/div/div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "490c7fc6-6b04-434b-ad35-ef3de843a2e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-success:nth-child(1)",
+      "targets": [
+        ["css=.btn-outline-success:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8571f694-e869-432a-8c9e-133e6d24e282",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-success:nth-child(1)",
+      "targets": [
+        ["css=.btn-outline-success:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "463fed15-922b-42c3-a09e-2b942538fd84",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=notify_message",
+      "targets": [
+        ["id=notify_message", "id"],
+        ["css=#notify_message", "css:finder"],
+        ["xpath=//div[@id='notify_message']", "xpath:attributes"],
+        ["xpath=//body/div[5]", "xpath:position"],
+        ["xpath=//div[contains(.,'Discount end date needs to be after start date')]", "xpath:innerText"]
+      ],
+      "value": "Discount end date needs to be after start date"
+    }]
+  }, {
+    "id": "978a5809-98e4-4ba0-907b-ffcf91faa2d5",
+    "name": "CI_DISCOUNT_END_EMPTY",
+    "commands": [{
+      "id": "29384ac3-581d-477a-bccc-2bf2833b7cc4",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:1111/admin/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8750514b-16ec-4210-849f-b79e1d174242",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6804c9ae-021a-493b-b277-14bb5ee09d7f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Discount codes",
+      "targets": [
+        ["linkText=Discount codes", "linkText"],
+        ["css=.mb-2 > .nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='container']/div/nav/div/ul[2]/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/settings/discounts')]", "xpath:href"],
+        ["xpath=//ul[2]/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45b6f093-b269-4f37-96e2-3d7f412bb650",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Discount",
+      "targets": [
+        ["linkText=New Discount", "linkText"],
+        ["css=.float-right > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'New Discount')]", "xpath:link"],
+        ["xpath=//div[@id='container']/div/main/div/h2/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/settings/discount/new')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'New Discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34f07fab-1ace-475e-92d6-17d167ea148c",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountCode",
+      "targets": [
+        ["id=discountCode", "id"],
+        ["css=#discountCode", "css:finder"],
+        ["xpath=//input[@id='discountCode']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0490ee0e-0713-4972-b302-7b1969326cc9",
+      "comment": "",
+      "command": "type",
+      "target": "id=discountCode",
+      "targets": [
+        ["id=discountCode", "id"],
+        ["css=#discountCode", "css:finder"],
+        ["xpath=//input[@id='discountCode']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "CODE23"
+    }, {
+      "id": "058fe74d-d4c8-4803-907c-e30c19042850",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountType",
+      "targets": [
+        ["id=discountType", "id"],
+        ["css=#discountType", "css:finder"],
+        ["xpath=//select[@id='discountType']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92b3ae2e-07ec-41c1-902a-1f88ba0e73b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-12:nth-child(4) > .form-group",
+      "targets": [
+        ["css=.col-12:nth-child(4) > .form-group", "css:finder"],
+        ["xpath=//form[@id='discountNewForm']/div[4]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "396f62be-69a0-498b-8dd5-b472001c9382",
+      "comment": "",
+      "command": "click",
+      "target": "id=discountValue",
+      "targets": [
+        ["id=discountValue", "id"],
+        ["css=#discountValue", "css:finder"],
+        ["xpath=//input[@id='discountValue']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99963943-005b-435a-856b-8d365322a83a",
+      "comment": "",
+      "command": "type",
+      "target": "id=discountValue",
+      "targets": [
+        ["id=discountValue", "id"],
+        ["css=#discountValue", "css:finder"],
+        ["xpath=//input[@id='discountValue']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "788af4d6-45b1-44f8-ba86-244642389e9e",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=discountStart",
+      "targets": [
+        ["id=discountStart", "id"],
+        ["css=#discountStart", "css:finder"],
+        ["xpath=//input[@id='discountStart']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div[5]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fddb4ac6-af48-4bc4-96a3-457d7d59366a",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.gj-modal:nth-child(19)",
+      "targets": [
+        ["css=.gj-modal:nth-child(19)", "css:finder"],
+        ["xpath=//div[10]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00562891-2b3f-4d5a-8eaf-c8176d4c6d99",
+      "comment": "",
+      "command": "click",
+      "target": "css=.admin",
+      "targets": [
+        ["css=.admin", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72520137-4739-47da-ba86-37bb7585b848",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > .current-month:nth-child(6) > div",
+      "targets": [
+        ["css=tr:nth-child(4) > .current-month:nth-child(6) > div", "css:finder"],
+        ["xpath=//tr[4]/td[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3a32cb8-a469-4aad-9567-3de41fb47ff9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gj-modal:nth-child(19) .btn:nth-child(2)",
+      "targets": [
+        ["css=.gj-modal:nth-child(19) .btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[10]/div/div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8d50fc9-d3f3-4302-a7a1-c3d7dc7e244e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-success:nth-child(1)",
+      "targets": [
+        ["css=.btn-outline-success:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dad8acc4-f784-4259-8db9-ca305d376a30",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-success:nth-child(1)",
+      "targets": [
+        ["css=.btn-outline-success:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "600c61a1-91ed-4ea2-92b6-c8590dd6b68c",
+      "comment": "",
+      "command": "click",
+      "target": "id=notify_message",
+      "targets": [
+        ["id=notify_message", "id"],
+        ["css=#notify_message", "css:finder"],
+        ["xpath=//div[@id='notify_message']", "xpath:attributes"],
+        ["xpath=//body/div[3]", "xpath:position"],
+        ["xpath=//div[contains(.,'Discount end date needs to be after start date')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "337e17c4-1b5a-42da-b6bc-8e420f2ba832",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-success:nth-child(1)",
+      "targets": [
+        ["css=.btn-outline-success:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='']", "xpath:attributes"],
+        ["xpath=//form[@id='discountNewForm']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add discount')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7b0f1fd-2102-498e-8467-d04713407375",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=notify_message",
+      "targets": [
+        ["id=notify_message", "id"],
+        ["css=#notify_message", "css:finder"],
+        ["xpath=//div[@id='notify_message']", "xpath:attributes"],
+        ["xpath=//body/div[6]", "xpath:position"],
+        ["xpath=//div[contains(.,'Discount end date needs to be after start date')]", "xpath:innerText"]
+      ],
+      "value": "A end date must be entered"
+    }]
+  }],
+  "suites": [{
+    "id": "79c6ddd9-f673-4e19-825b-752934a20fc0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:1111/"],
+  "plugins": []
+}
