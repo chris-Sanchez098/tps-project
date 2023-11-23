@@ -14,7 +14,7 @@ describe('Register-customer', function() {
     await driver.quit();
   })
   it('ci:email-pruebas@', async function() {
-    await driver.get("http://172.190.159.50:1111/")
+    await driver.get("http://127.0.0.1:1111/")
     await driver.manage().window().setRect({ width: 1366, height: 741 })
     await driver.findElement(By.linkText("Add to cart")).click()
     await driver.findElement(By.linkText("Cart 1")).click()
@@ -54,7 +54,7 @@ describe('Register-customer', function() {
     await driver.wait(until.elementIsVisible(await driver.findElement(By.css(".invalid-feedback"))), 300)
   })
   it('ci:email-@pruebas', async function() {
-    await driver.get("http://172.190.159.50:1111/")
+    await driver.get("http://127.0.0.1:1111/")
     await driver.manage().window().setRect({ width: 1366, height: 741 })
     await driver.findElement(By.linkText("Add to cart")).click()
     await driver.findElement(By.linkText("Cart 1")).click()
@@ -94,7 +94,7 @@ describe('Register-customer', function() {
     await driver.wait(until.elementIsVisible(await driver.findElement(By.css(".invalid-feedback"))), 300)
   })
   it('ci:email-empty', async function() {
-    await driver.get("http://172.190.159.50:1111/")
+    await driver.get("http://127.0.0.1:1111/")
     await driver.manage().window().setRect({ width: 1366, height: 741 })
     await driver.findElement(By.linkText("Add to cart")).click()
     await driver.findElement(By.linkText("Cart 1")).click()
@@ -134,7 +134,7 @@ describe('Register-customer', function() {
     await driver.wait(until.elementIsVisible(await driver.findElement(By.css(".invalid-feedback"))), 300)
   })
   it('cv:email-prueba@correo.com', async function() {
-    await driver.get("http://172.190.159.50:1111/")
+    await driver.get("http://127.0.0.1:1111/")
     await driver.manage().window().setRect({ width: 1366, height: 741 })
     await driver.findElement(By.linkText("Add to cart")).click()
     await driver.findElement(By.linkText("Cart 1")).click()
@@ -172,7 +172,7 @@ describe('Register-customer', function() {
     await driver.findElement(By.id("createAccountCheckbox")).click()
     await driver.findElement(By.id("checkoutInformation")).click()
     {
-      const elements = await driver.findElements(By.css(".col-md-5"))
+      const elements = await driver.findElements(By.linkText("Proceed to payment"))
       assert(elements.length)
     }
   })

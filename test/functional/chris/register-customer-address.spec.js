@@ -14,7 +14,7 @@ describe('Register-customer-address', function() {
     await driver.quit();
   })
   it('ci-last-address-empty', async function() {
-    await driver.get("http://127.0.0.1:1111//")
+    await driver.get("http://127.0.0.1:1111/")
     await driver.manage().window().setRect({ width: 1366, height: 741 })
     await driver.findElement(By.linkText("Add to cart")).click()
     await driver.findElement(By.linkText("Cart 1")).click()
@@ -51,10 +51,11 @@ describe('Register-customer-address', function() {
     await driver.findElement(By.id("newCustomerPassword")).sendKeys("Muv2020-4-D*")
     await driver.findElement(By.id("createAccountCheckbox")).click()
     await driver.findElement(By.id("checkoutInformation")).click()
+    await driver.sleep(5000)
     assert(await driver.switchTo().alert().getText() == "La cantidad de caracteres deber ser inferior a 20")
   })
   it('ci-last-address-more-35', async function() {
-    await driver.get("http://127.0.0.1:1111//")
+    await driver.get("http://127.0.0.1:1111/")
     await driver.manage().window().setRect({ width: 1366, height: 741 })
     await driver.findElement(By.linkText("Add to cart")).click()
     await driver.findElement(By.linkText("Cart 1")).click()
@@ -91,10 +92,11 @@ describe('Register-customer-address', function() {
     await driver.findElement(By.id("newCustomerPassword")).sendKeys("Muv2020-4-D*")
     await driver.findElement(By.id("createAccountCheckbox")).click()
     await driver.findElement(By.id("checkoutInformation")).click()
+    await driver.sleep(5000)
     assert(await driver.switchTo().alert().getText() == "La cantidad de caracteres deber ser inferior a 20")
   })
   it('cv-address', async function() {
-    await driver.get("http://127.0.0.1:1111//")
+    await driver.get("http://127.0.0.1:1111/")
     await driver.manage().window().setRect({ width: 1366, height: 741 })
     await driver.findElement(By.linkText("Add to cart")).click()
     await driver.findElement(By.linkText("Cart 1")).click()
@@ -131,8 +133,9 @@ describe('Register-customer-address', function() {
     await driver.findElement(By.id("newCustomerPassword")).sendKeys("Muv2020-4-D*")
     await driver.findElement(By.id("createAccountCheckbox")).click()
     await driver.findElement(By.id("checkoutInformation")).click()
+    await driver.sleep(5000)
     {
-      const elements = await driver.findElements(By.css(".col-md-5"))
+      const elements = await driver.findElements(By.linkText("Proceed to payment"))
       assert(elements.length)
     }
   })
