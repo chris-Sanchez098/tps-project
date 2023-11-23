@@ -509,10 +509,19 @@
             <g:availability>in stock</g:availability>
         </item>
         <item>
-            <g:title>Jacket222</g:title>
-            <g:id>655111db75b9b933a0838696</g:id>
-            <g:link>http://localhost:1111/product/jacket222</g:link>
-            <g:description>&lt;p&gt;&lt;span&gt;Item 1 description about details&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;</g:description>
+            <g:title>Secon Product</g:title>
+            <g:id>6551139075b9b933a0838698</g:id>
+            <g:link>http://localhost:1111/product/secon-product</g:link>
+            <g:description>&lt;p&gt;tEEEEEEEEEEEEEEEEEEEEEES CSOAS&lt;/p&gt;</g:description>
+            <g:price>99.99 USD</g:price>
+            <g:image_link>http://localhost:1111/uploads/placeholder.png</g:image_link>
+            <g:availability>in stock</g:availability>
+        </item>
+        <item>
+            <g:title>Item 58</g:title>
+            <g:id>655bff3f2f46676835702c53</g:id>
+            <g:link>http://localhost:1111/product/item-58</g:link>
+            <g:description>&lt;h1&gt;Item 1 Item 1 description&lt;/h1&gt;</g:description>
             <g:price>99.99 USD</g:price>
             <g:image_link>http://localhost:1111/uploads/placeholder.png</g:image_link>
             <g:availability>in stock</g:availability>

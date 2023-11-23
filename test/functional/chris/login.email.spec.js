@@ -18,6 +18,7 @@ describe('login-user-email-ci-dont-exits', function() {
     await driver.manage().window().setRect({ width: 1366, height: 736 })
     await driver.findElement(By.css(".ml-3 > .btn")).click()
     await driver.findElement(By.id("email")).click()
+    await driver.findElement(By.id("email")).sendKeys("nombre@apellido")
     await driver.findElement(By.id("password")).sendKeys("tps-pwd07*")
     await driver.findElement(By.id("customerloginForm")).click()
     await driver.findElement(By.id("customerloginForm")).click()
