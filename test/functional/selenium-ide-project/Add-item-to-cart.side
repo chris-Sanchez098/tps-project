@@ -944,11 +944,11 @@
   }],
   "suites": [{
     "id": "7f1419b8-491d-4f1e-a085-143d5574ff2f",
-    "name": "Default Suite",
+    "name": "add-item-to-cart",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["be3983bb-bad0-493a-95c6-c6db313533f7"]
+    "tests": ["be3983bb-bad0-493a-95c6-c6db313533f7", "1a92e2fc-9b5d-4394-8411-522966678c2a", "f6f465e0-f5e7-49d8-a2eb-a5151401148e", "833fd5a2-0e5e-4597-be10-51281cd7eadc", "2026ed51-401c-40b4-a91f-e4ea8a3aede6", "6c8a29ef-2d58-4f7f-8737-e5e48f9ade88", "0b6fd64e-8b06-4cea-98ab-40a8da3cb1ed"]
   }],
   "urls": ["http://localhost:1111/"],
   "plugins": []

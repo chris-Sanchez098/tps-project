@@ -7,9 +7,30 @@
     "start": "node app.js",
     "deploy": "node deploy.js",
     "testdata": "node lib/testdata.js",
-    "test": "ava",
+    "test": "jest test",
+    "test:ava": "ava",
+    "test:unit": "jest test/unit",
     "dev": " pm2-dev start app.js",
     "lint": "eslint ./"
+  },
+  "jest": {
+    "collectCoverage": false,
+    "coverageReporters": [
+      "text",
+      "html"
+    ],
+    "coverageDirectory": "./test/coverage",
+    "reporters": [
+      "default",
+      [
+        "jest-html-reporter",
+        {
+          "pageTitle": "Test Report",
+          "outputPath": "./test/unit/test-report.html",
+          "includeFailureMsg": true
+        }
+      ]
+    ]
   },
   "ava": {
     "serial": true,
@@ -55,7 +76,7 @@
     "html-entities": "^1.2.0",
     "i18n": "^0.8.4",
     "lodash": "^4.17.15",
-    "lunr": "^2.3.8",
+    "lunr": "^2.3.9",
     "mime-db": "^1.43.0",
     "mime-type": "^3.0.7",
     "mkdirp": "^0.5.5",
@@ -74,6 +95,7 @@
     "rimraf": "^2.7.1",
     "sanitize-html": "^2.3.2",
     "selenium-webdriver": "^4.15.0",
+    "sinon": "^17.0.1",
     "sitemap": "^1.6.0",
     "string-strip-html": "^4.3.14",
     "strip-bom": "^3.0.0",
@@ -94,6 +116,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "globby": "^11.0.1",
+    "jest": "^29.7.0",
+    "jest-html-reporter": "^3.10.2",
     "less": "^3.12.2",
     "mocha": "^10.2.0",
     "pm2": "^4.5.0",

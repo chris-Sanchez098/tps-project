@@ -7,7 +7,7 @@ describe('search-ci-empty', function() {
   let driver
   let vars
   beforeEach(async function() {
-    driver = await new Builder().forBrowser('chrome').build()
+    driver = await new Builder().forBrowser('firefox').build()
     vars = {}
   })
   afterEach(async function() {
@@ -20,6 +20,7 @@ describe('search-ci-empty', function() {
     await driver.findElement(By.id("frm_search")).sendKeys("")
     await driver.findElement(By.id("frm_search")).sendKeys(Key.ENTER)
     assert(await driver.findElement(By.css(".col-sm-12 > .text-danger")).getText() == "the Product title field is required")
+    await driver.sleep(5000)
   })
 })
 
@@ -29,7 +30,7 @@ describe('search-ci-dont-exist', function() {
   let driver
   let vars
   beforeEach(async function() {
-    driver = await new Builder().forBrowser('chrome').build()
+    driver = await new Builder().forBrowser('firefox').build()
     vars = {}
   })
   afterEach(async function() {
@@ -42,6 +43,7 @@ describe('search-ci-dont-exist', function() {
     await driver.findElement(By.id("frm_search")).sendKeys("Carro")
     await driver.findElement(By.id("frm_search")).sendKeys(Key.ENTER)
     assert(await driver.findElement(By.css(".col-sm-12 > .text-danger")).getText() == "No products found")
+    await driver.sleep(5000)
   })
 })
 
@@ -51,7 +53,7 @@ describe('search-cv', function() {
   let driver
   let vars
   beforeEach(async function() {
-    driver = await new Builder().forBrowser('chrome').build()
+    driver = await new Builder().forBrowser('firefox').build()
     vars = {}
   })
   afterEach(async function() {
@@ -64,5 +66,6 @@ describe('search-cv', function() {
     await driver.findElement(By.id("frm_search")).sendKeys("jacket")
     await driver.findElement(By.id("frm_search")).sendKeys(Key.ENTER)
     await driver.wait(until.elementLocated(By.css(".product-title")), 30000)
+    await driver.sleep(5000)
   })
 })

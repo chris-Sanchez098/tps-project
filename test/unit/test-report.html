@@ -1,0 +1,338 @@
+<html><head><meta charset="utf-8"/><title>Test Report</title><style type="text/css">html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+body {
+  padding: 2rem 1rem;
+  font-size: 0.85rem;
+}
+.jesthtml-content {
+  margin: 0 auto;
+  max-width: 70rem;
+}
+header {
+  display: flex;
+  align-items: center;
+}
+#title {
+  margin: 0;
+  flex-grow: 1;
+}
+#logo {
+  height: 4rem;
+}
+#timestamp {
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+/** SUMMARY */
+#summary {
+  color: #333;
+  margin: 2rem 0;
+  display: flex;
+  font-family: monospace;
+  font-size: 1rem;
+}
+#summary > div {
+  margin-right: 2rem;
+  background: #eee;
+  padding: 1rem;
+  min-width: 15rem;
+}
+#summary > div:last-child {
+  margin-right: 0;
+}
+@media only screen and (max-width: 720px) {
+  #summary {
+    flex-direction: column;
+  }
+  #summary > div {
+    margin-right: 0;
+    margin-top: 2rem;
+  }
+  #summary > div:first-child {
+    margin-top: 0;
+  }
+}
+
+.summary-total {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.summary-passed {
+  color: #4f8a10;
+  border-left: 0.4rem solid #4f8a10;
+  padding-left: 0.5rem;
+}
+.summary-failed,
+.summary-obsolete-snapshots {
+  color: #d8000c;
+  border-left: 0.4rem solid #d8000c;
+  padding-left: 0.5rem;
+}
+.summary-pending {
+  color: #9f6000;
+  border-left: 0.4rem solid #9f6000;
+  padding-left: 0.5rem;
+}
+.summary-empty {
+  color: #999;
+  border-left: 0.4rem solid #999;
+}
+
+.test-result {
+  padding: 1rem;
+  margin-bottom: 0.25rem;
+}
+.test-result:last-child {
+  border: 0;
+}
+.test-result.passed {
+  background-color: #dff2bf;
+  color: #4f8a10;
+}
+.test-result.failed {
+  background-color: #ffbaba;
+  color: #d8000c;
+}
+.test-result.pending {
+  background-color: #ffdf61;
+  color: #9f6000;
+}
+
+.test-info {
+  display: flex;
+  justify-content: space-between;
+}
+.test-suitename {
+  width: 20%;
+  text-align: left;
+  font-weight: bold;
+  word-break: break-word;
+}
+.test-title {
+  width: 40%;
+  text-align: left;
+  font-style: italic;
+}
+.test-status {
+  width: 20%;
+  text-align: right;
+}
+.test-duration {
+  width: 10%;
+  text-align: right;
+  font-size: 0.75rem;
+}
+
+.failureMessages {
+  padding: 0 1rem;
+  margin-top: 1rem;
+  border-top: 1px dashed #d8000c;
+}
+.failureMessages.suiteFailure {
+  border-top: none;
+}
+.failureMsg {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+.suite-container {
+  margin-bottom: 2rem;
+}
+.suite-container > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+.suite-container label {
+  display: block;
+}
+.suite-container .suite-tests {
+  overflow-y: hidden;
+  height: 0;
+}
+.suite-container > input[type="checkbox"]:checked ~ .suite-tests {
+  height: auto;
+  overflow: visible;
+}
+.suite-info {
+  padding: 1rem;
+  background-color: #eee;
+  color: #777;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+.suite-info:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+.suite-info .suite-path {
+  word-break: break-all;
+  flex-grow: 1;
+  font-family: monospace;
+  font-size: 1rem;
+}
+.suite-info .suite-time {
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.3rem;
+  font-size: 0.75rem;
+}
+.suite-info .suite-time.warn {
+  background-color: #d8000c;
+  color: #fff;
+}
+.suite-info:before {
+  content: "\2303";
+  display: inline-block;
+  margin-right: 0.5rem;
+  transform: rotate(0deg);
+}
+.suite-container > input[type="checkbox"]:checked ~ label .suite-info:before {
+  transform: rotate(180deg);
+}
+
+/* CONSOLE LOGS */
+.suite-consolelog {
+  margin-bottom: 0.25rem;
+  padding: 1rem;
+  background-color: #efefef;
+}
+.suite-consolelog-header {
+  font-weight: bold;
+}
+.suite-consolelog-item {
+  padding: 0.5rem;
+}
+.suite-consolelog-item pre {
+  margin: 0.5rem 0;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+.suite-consolelog-item-origin {
+  color: #777;
+  font-weight: bold;
+}
+.suite-consolelog-item-message {
+  color: #000;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+}
+
+/* OBSOLETE SNAPSHOTS */
+.suite-obsolete-snapshots {
+  margin-bottom: 0.25rem;
+  padding: 1rem;
+  background-color: #ffbaba;
+  color: #d8000c;
+}
+.suite-obsolete-snapshots-header {
+  font-weight: bold;
+}
+.suite-obsolete-snapshots-item {
+  padding: 0.5rem;
+}
+.suite-obsolete-snapshots-item pre {
+  margin: 0.5rem 0;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+.suite-obsolete-snapshots-item-message {
+  color: #000;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+}
+</style></head><body><div class="jesthtml-content"><header><h1 id="title">Test Report</h1></header><div id="metadata-container"><div id="timestamp">Started: 2023-12-11 18:49:56</div><div id="summary"><div id="suite-summary"><div class="summary-total">Suites (7)</div><div class="summary-passed ">3 passed</div><div class="summary-failed ">4 failed</div><div class="summary-pending  summary-empty">0 pending</div></div><div id="test-summary"><div class="summary-total">Tests (19)</div><div class="summary-passed ">13 passed</div><div class="summary-failed ">6 failed</div><div class="summary-pending  summary-empty">0 pending</div></div></div></div><div id="suite-1" class="suite-container"><input id="collapsible-0" type="checkbox" class="toggle" checked="checked"/><label for="collapsible-0"><div class="suite-info"><div class="suite-path">/home/csanchez/MEGA/9_Semestre/TPS/tps-project/test/unit/calculateShipping.test.js</div><div class="suite-time">1.095s</div></div></label><div class="suite-tests"><div class="test-result passed"><div class="test-info"><div class="test-suitename">calculateShipping</div><div class="test-title">Caso de Prueba 1 - Carrito con Suscripción (Envío Gratuito)</div><div class="test-status">passed</div><div class="test-duration">0.019s</div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">calculateShipping</div><div class="test-title">Caso de Prueba 2 - Compra que Alcanza el Umbral de Compra Gratuita</div><div class="test-status">passed</div><div class="test-duration">0.001s</div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">calculateShipping</div><div class="test-title">Caso de Prueba 3 - Compra sin País Establecido (Estimación de Envío Nacional)</div><div class="test-status">passed</div><div class="test-duration">0.001s</div></div></div><div class="test-result failed"><div class="test-info"><div class="test-suitename">calculateShipping</div><div class="test-title">Caso de Prueba 4 - Compra con País Diferente al Predeterminado (Envío Internacional)</div><div class="test-status">failed</div><div class="test-duration">0.019s</div></div><div class="failureMessages"> <pre class="failureMsg">Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 25
+Received: 0
+    at Object.toBe (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/test/unit/calculateShipping.test.js:27:47)
+    at Promise.then.completed (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-runner/build/testWorker.js:108:12)</pre></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">calculateShipping</div><div class="test-title">Caso de Prueba 5 - Compra con País Igual al Predeterminado (Envío Nacional)</div><div class="test-status">passed</div><div class="test-duration">0.002s</div></div></div></div></div><div id="suite-2" class="suite-container"><input id="collapsible-1" type="checkbox" class="toggle" checked="checked"/><label for="collapsible-1"><div class="suite-info"><div class="suite-path">/home/csanchez/MEGA/9_Semestre/TPS/tps-project/test/unit/calculateDiscount.test.js</div><div class="suite-time">1.408s</div></div></label><div class="suite-tests"><div class="test-result passed"><div class="test-info"><div class="test-suitename">calculateDiscount</div><div class="test-title">Caso de Prueba 1 - Descuento de Cantidad (Amount)</div><div class="test-status">passed</div><div class="test-duration">0.012s</div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">calculateDiscount</div><div class="test-title">Caso de Prueba 2 - Descuento por Porcentaje (Percent)</div><div class="test-status">passed</div><div class="test-duration">0.001s</div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">calculateDiscount</div><div class="test-title">Caso de Prueba 3 - Sin Descuento (Código de Descuento No Existente)</div><div class="test-status">passed</div><div class="test-duration">0.003s</div></div></div></div></div><div id="suite-3" class="suite-container"><input id="collapsible-2" type="checkbox" class="toggle" checked="checked"/><label for="collapsible-2"><div class="suite-info"><div class="suite-path">/home/csanchez/MEGA/9_Semestre/TPS/tps-project/test/unit/indexCustomer.test.js</div><div class="suite-time">1.644s</div></div></label><div class="suite-tests"><div class="test-result failed"><div class="test-info"><div class="test-suitename">indexCustomers</div><div class="test-title">Caso de Prueba 1 - Índice Vacío</div><div class="test-status">failed</div><div class="test-duration">0.046s</div></div><div class="failureMessages"> <pre class="failureMsg">Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  -  1
++ Received  + 13
+
+- Object {}
++ Object {
++   "fieldVectors": Array [],
++   "fields": Array [
++     "email",
++     "name",
++     "phone",
++   ],
++   "invertedIndex": Array [],
++   "pipeline": Array [
++     "stemmer",
++   ],
++   "version": "2.3.9",
++ }
+    at Object.toEqual (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/test/unit/indexCustomer.test.js:24:45)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</pre></div></div><div class="test-result failed"><div class="test-info"><div class="test-suitename">indexCustomers</div><div class="test-title">Caso de Prueba 2 - Índice con Clientes</div><div class="test-status">failed</div><div class="test-duration">0.016s</div></div><div class="failureMessages"> <pre class="failureMsg">Error: 
+    at /home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/lunr/lunr.js:2982:34
+    at Object.&lt;anonymous&gt; (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/lunr/lunr.js:3475:3)
+    at Runtime._execModule (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-runtime/build/index.js:1439:24)
+    at Runtime._loadModule (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-runtime/build/index.js:1022:12)
+    at Runtime.requireModule (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-runtime/build/index.js:882:12)
+    at Runtime.requireModuleOrMock (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-runtime/build/index.js:1048:21)
+    at Object.require (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/lib/indexing.js:2:14)
+    at Runtime._execModule (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-runtime/build/index.js:1439:24)
+    at Runtime._loadModule (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-runtime/build/index.js:1022:12)
+    at Runtime.requireModule (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-runtime/build/index.js:882:12)
+    at Runtime.requireModuleOrMock (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-runtime/build/index.js:1048:21)
+    at Object.require (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/test/unit/indexCustomer.test.js:2:28)
+    at Runtime._execModule (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-runtime/build/index.js:1439:24)
+    at Runtime._loadModule (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-runtime/build/index.js:1022:12)
+    at Runtime.requireModule (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-runtime/build/index.js:882:12)
+    at jestAdapter (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:77:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at runTestInternal (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/node_modules/jest-runner/build/testWorker.js:108:12)</pre></div></div></div></div><div id="suite-4" class="suite-container"><input id="collapsible-3" type="checkbox" class="toggle" checked="checked"/><label for="collapsible-3"><div class="suite-info"><div class="suite-path">/home/csanchez/MEGA/9_Semestre/TPS/tps-project/test/unit/updateSubscriptionCheck.test.js</div><div class="suite-time">1.898s</div></div></label><div class="suite-tests"><div class="test-result passed"><div class="test-info"><div class="test-suitename">updateSubscriptionCheck</div><div class="test-title">Camino 1 - Carrito Vacío</div><div class="test-status">passed</div><div class="test-duration">0.008s</div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">updateSubscriptionCheck</div><div class="test-title">Camino 2 - Carrito con Elementos (Subcamino 2.1)</div><div class="test-status">passed</div><div class="test-duration">0.002s</div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">updateSubscriptionCheck</div><div class="test-title">Camino 2 - Carrito con Elementos (Subcamino 2.2)</div><div class="test-status">passed</div><div class="test-duration">0.001s</div></div></div></div></div><div id="suite-5" class="suite-container"><input id="collapsible-4" type="checkbox" class="toggle" checked="checked"/><label for="collapsible-4"><div class="suite-info"><div class="suite-path">/home/csanchez/MEGA/9_Semestre/TPS/tps-project/test/unit/fixProductsIds.test.js</div><div class="suite-time">1.942s</div></div></label><div class="suite-tests"><div class="test-result passed"><div class="test-info"><div class="test-suitename">fixProductIds</div><div class="test-title">Caso de Prueba 1 - Agregar Identificadores de Producto (ProductIndex Par)</div><div class="test-status">passed</div><div class="test-duration">0.019s</div></div></div></div></div><div id="suite-6" class="suite-container"><input id="collapsible-5" type="checkbox" class="toggle" checked="checked"/><label for="collapsible-5"><div class="suite-info"><div class="suite-path">/home/csanchez/MEGA/9_Semestre/TPS/tps-project/test/unit/createReview.test.js</div><div class="suite-time">2.349s</div></div></label><div class="suite-tests"><div class="test-result passed"><div class="test-info"><div class="test-suitename">createReview</div><div class="test-title">Caso de Prueba 1 - Revisión Existente para el Mismo Usuario y Producto</div><div class="test-status">passed</div><div class="test-duration">0.008s</div></div></div><div class="test-result failed"><div class="test-info"><div class="test-suitename">createReview</div><div class="test-title">Caso de Prueba 2 - Palabras Ofensivas en el Título</div><div class="test-status">failed</div><div class="test-duration">0.022s</div></div><div class="failureMessages"> <pre class="failureMsg">Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 1
++ Received  + 1
+
+  Object {
+-   "error": "Review was declined. Please check inputs",
++   "error": "Unable to create review",
+  }
+    at Object.toEqual (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/test/unit/createReview.test.js:60:20)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</pre></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">createReview</div><div class="test-title">Caso de Prueba 3 - Creación Exitosa de Nueva Revisión</div><div class="test-status">passed</div><div class="test-duration">0.002s</div></div></div></div></div><div id="suite-7" class="suite-container"><input id="collapsible-6" type="checkbox" class="toggle" checked="checked"/><label for="collapsible-6"><div class="suite-info"><div class="suite-path">/home/csanchez/MEGA/9_Semestre/TPS/tps-project/test/unit/updateTotalCart.test.js</div><div class="suite-time">2.409s</div></div></label><div class="suite-tests"><div class="test-result failed"><div class="test-info"><div class="test-suitename">updateTotalCart</div><div class="test-title">Caso de Prueba 1 - Carrito Vacío</div><div class="test-status">failed</div><div class="test-duration">0.277s</div></div><div class="failureMessages"> <pre class="failureMsg">Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 10
+Received: 0
+    at Object.toBe (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/test/unit/updateTotalCart.test.js:27:45)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</pre></div></div><div class="test-result failed"><div class="test-info"><div class="test-suitename">updateTotalCart</div><div class="test-title">Caso de Prueba 2 - Carrito con Elementos</div><div class="test-status">failed</div><div class="test-duration">0.005s</div></div><div class="failureMessages"> <pre class="failureMsg">Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 20
+Received: 35
+    at Object.toBe (/home/csanchez/MEGA/9_Semestre/TPS/tps-project/test/unit/updateTotalCart.test.js:83:45)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</pre></div></div></div></div></div></body></html>

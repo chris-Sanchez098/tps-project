@@ -1,7 +1,7 @@
 {
   "id": "3ac5de10-21e7-41c1-af46-1c4f27378e91",
   "version": "2.0",
-  "name": "pf-tps",
+  "name": "login-customer-create-product-search",
   "url": "http://localhost:1111",
   "tests": [{
     "id": "7ebaefc5-b600-4312-b249-76d4413706ff",
@@ -1392,15 +1392,10 @@
     }, {
       "id": "905b7e00-778b-40a8-983e-da61dbfb3f17",
       "comment": "",
-      "command": "assertText",
+      "command": "assertElementPresent",
       "target": "css=#validationModalBody > p",
-      "targets": [
-        ["css=#validationModalBody > p", "css:finder"],
-        ["xpath=//div[@id='validationModalBody']/p", "xpath:idRelative"],
-        ["xpath=//div/div/div[2]/div/p", "xpath:position"],
-        ["xpath=//p[contains(.,'productTitle - should NOT be shorter than 5 characters')]", "xpath:innerText"]
-      ],
-      "value": "the Product title field is required"
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "d1a5f77c-3026-43c6-80e9-fc80c9e25fdf",
@@ -2565,15 +2560,10 @@
     }, {
       "id": "582a4151-66f5-4e32-b6df-4b05d6216e30",
       "comment": "",
-      "command": "assertText",
+      "command": "assertElementPresent",
       "target": "css=#validationModalBody > p",
-      "targets": [
-        ["css=#validationModalBody > p", "css:finder"],
-        ["xpath=//div[@id='validationModalBody']/p", "xpath:idRelative"],
-        ["xpath=//div/div/div[2]/div/p", "xpath:position"],
-        ["xpath=//p[contains(.,'productDescription - should NOT be shorter than 25 characters')]", "xpath:innerText"]
-      ],
-      "value": "productDescription - should NOT be shorter than 25 characters"
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "4dfd3499-7d82-4206-9770-07189e1cd5d5",

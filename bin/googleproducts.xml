@@ -508,5 +508,23 @@
             <g:image_link>http://localhost:1111/https://www.eps.org/global_graphics/default-store-350x350.jpg</g:image_link>
             <g:availability>in stock</g:availability>
         </item>
+        <item>
+            <g:title>Item 58</g:title>
+            <g:id>657261a79464bf148cc9236c</g:id>
+            <g:link>http://localhost:1111/product/item-58</g:link>
+            <g:description>&lt;h1&gt;Item 1 Item 1 description&lt;/h1&gt;</g:description>
+            <g:price>99.99 USD</g:price>
+            <g:image_link>http://localhost:1111/uploads/placeholder.png</g:image_link>
+            <g:availability>in stock</g:availability>
+        </item>
+        <item>
+            <g:title>Item 59</g:title>
+            <g:id>657261e79464bf148cc9236d</g:id>
+            <g:link>http://localhost:1111/product/item-59</g:link>
+            <g:description>&lt;h1&gt;Item 1 description about all need details for this item&lt;/h1&gt;</g:description>
+            <g:price>99.99 USD</g:price>
+            <g:image_link>http://localhost:1111/uploads/placeholder.png</g:image_link>
+            <g:availability>in stock</g:availability>
+        </item>
     </channel>
 </rss>
